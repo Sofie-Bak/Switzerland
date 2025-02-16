@@ -1,0 +1,61 @@
+.container {
+  color: white;
+  margin-right: clamp(12.5rem, 26.837vw + 6.546rem, 38.75rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #b4c9c265;
+  max-width: clamp(20rem, 44.643vw - 8.571rem, 45rem); /* ADD CLAMP */
+  backdrop-filter: blur(8px);
+  padding: 40px;
+  overflow: hidden;
+  z-index: 4;
+  position: absolute;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.8s ease, transform 1.5s ease;
+  @media screen and (max-width: 799px) {
+    margin: 0;
+    background-color: #84948f9d;
+  }
+
+  h2 {
+    font-size: clamp(1rem, 1.563vw + 0rem, 1.875rem);
+    text-transform: uppercase;
+  }
+  p {
+    font-size: clamp(1rem, 0.256vw + 0.943rem, 1.25rem);
+    margin-top: 2em;
+    font-weight: 200;
+  }
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7em;
+  @media screen and (max-width: 799px) {
+    margin-top: 6em;
+  }
+}
+
+.img {
+  object-fit: cover;
+  width: clamp(18.75rem, 57.508vw + 5.99rem, 75rem);
+  height: clamp(20rem, 25.67vw + 3.571rem, 34.375rem); /* ADD CLAMP*/
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  @media screen and (max-width: 799px) {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+/* Animation when visible */
+.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
