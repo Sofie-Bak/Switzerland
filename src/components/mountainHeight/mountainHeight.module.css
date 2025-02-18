@@ -1,7 +1,13 @@
 .container {
   position: relative;
   overflow: hidden;
-  height: 950px;
+  height: clamp(30.625rem, 44.643vw + 8.304rem, 61.875rem);
+
+  @media screen and (max-width: 799px) {
+    height: 270px;
+    margin-top: 5em;
+    margin-bottom: 3em;
+  }
 
   p {
     color: #fff;
@@ -10,10 +16,23 @@
     right: 0;
     bottom: 0;
     letter-spacing: 2px;
-    width: 600px;
+    width: clamp(18.75rem, 19.417vw + 14.199rem, 37.5rem);
     font-weight: 300;
+    font-size: clamp(0.75rem, 0.259vw + 0.689rem, 1rem);
     margin-right: 1.7em;
     margin-bottom: 8em;
+    padding: 20px;
+    backdrop-filter: blur(5px);
+    background-color: #84948f6c;
+
+    @media screen and (max-width: 799px) {
+    padding: 10px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 1em;
+    text-align: left;
+    letter-spacing: 1px;
+}
   }
 }
 
@@ -22,7 +41,7 @@
   height: auto;
   stroke-dasharray: 1440;
   stroke-dashoffset: 1440;
-  transition: stroke-dashoffset 4s ease-in-out; 
+  transition: stroke-dashoffset 4s ease-in-out;
 }
 
 .img {
@@ -38,7 +57,6 @@
 }
 
 .reset .line {
-    stroke-dashoffset: 1440;
-  transition: stroke-dashoffset 0.7s; 
-
+  stroke-dashoffset: 1440;
+  transition: stroke-dashoffset 0.7s;
 }

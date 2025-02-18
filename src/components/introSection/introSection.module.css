@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   background-color: #b4c9c265;
-  max-width: clamp(20rem, 44.643vw - 8.571rem, 45rem); /* ADD CLAMP */
+  max-width: clamp(20rem, 44.643vw - 8.571rem, 45rem); 
   backdrop-filter: blur(8px);
   padding: 40px;
   overflow: hidden;
@@ -17,6 +17,7 @@
   transition: opacity 0.8s ease, transform 1.5s ease;
   @media screen and (max-width: 799px) {
     margin: 0;
+    padding: 40px 20px;
     background-color: #84948f9d;
   }
 
@@ -44,12 +45,13 @@
 .img {
   object-fit: cover;
   width: clamp(18.75rem, 57.508vw + 5.99rem, 75rem);
-  height: clamp(20rem, 25.67vw + 3.571rem, 34.375rem); /* ADD CLAMP*/
+  height: clamp(20rem, 25.67vw + 3.571rem, 34.375rem); 
   opacity: 0;
   transform: translateX(-50px);
   transition: opacity 0.8s ease, transform 0.8s ease;
   @media screen and (max-width: 799px) {
     width: 100%;
+    max-height: 300px;
     object-fit: cover;
   }
 }

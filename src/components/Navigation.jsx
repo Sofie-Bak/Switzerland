@@ -28,9 +28,6 @@ const Navigation = () => {
                 home
               </NavLink>
               <NavLink className="link" to="/" onClick={() => setIsOpen(false)}>
-                favourites
-              </NavLink>
-              <NavLink className="link" to="/" onClick={() => setIsOpen(false)}>
                 by Sofie bak
               </NavLink>
             </li>

@@ -11,21 +11,24 @@ const ViewsSection = () => {
     const [isVisible, setIsVisible] = useState(false);
   
     useEffect(() => {
+      /* Intersection Observer to detect when the section is in view */
       const observer = new IntersectionObserver(
         (entries) => {
           const [entry] = entries;
-          setIsVisible(entry.isIntersecting); /* Update my state when it is on screen */
+          setIsVisible(
+            entry.isIntersecting
+          ); /* Update my state when it is on screen */
         },
-        { threshold: 0.3 }
+        { threshold: 0.3 } /* Trigger when 30% of the section is in view */
       );
-  
+      
       if (sectionRef.current) {
-        observer.observe(sectionRef.current);
+        observer.observe(sectionRef.current); /* Starts observing the section inside the section*/
       }
-  
+
       return () => {
         if (sectionRef.current) {
-          observer.unobserve(sectionRef.current);
+          observer.unobserve(sectionRef.current); /* Remove section from observer when component is out of view */
         }
       };
     }, []);

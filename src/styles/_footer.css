@@ -1,0 +1,46 @@
+.footerContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 7em;
+    border-top: 1px solid #ffffff3f;
+    color: #fff;
+    background-color: #072b21;
+    padding-bottom: 2em;
+
+
+    .name {
+        display: flex;
+        
+        p:nth-child(2) {    
+            font-weight: bold;
+            letter-spacing: 1.5px;
+        }
+    }
+
+    .footerLogo {
+        font-size: 6em;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        p {
+            font-size: 12px;
+            font-weight: 100;
+            margin-top: 10px;
+        }
+    }
+    
+    p {
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .footerSocials {
+        display: flex;
+        gap: 1em;
+        font-size: 1.5em;
+    }
+
+}

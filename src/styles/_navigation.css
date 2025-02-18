@@ -26,6 +26,10 @@
 
     .logo {
       padding: 0 20px;
+      position: absolute;
+      top: 0;
+      margin-top: .2em;
+      z-index: 5;
     }
   }
 
@@ -54,7 +58,7 @@
       position: fixed;
       height: 100%;
       width: 100%;
-      background-color: rgba(0, 0, 0, 0.575);
+      background-color:#072b21ea;
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -82,6 +86,12 @@
       transform: translateY(-5px);
       box-shadow: inset 0px -20px 0px rgba(255, 255, 255, 0.573);
     }
+
+    @media screen and (max-width: 799px) {
+    margin-left: 0;
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
   }
 }
 
@@ -100,6 +110,7 @@
 
   .nav-links .link a {
     font-size: 30px !important;
+    
   }
 }
 

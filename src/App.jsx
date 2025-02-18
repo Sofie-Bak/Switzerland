@@ -1,11 +1,12 @@
 import { useRoutes } from "react-router-dom";
 import Home from "./pages/Home";
 import { Helmet } from "react-helmet-async";
+import Footer from "./components/footer/Footer";
 
 function App() {
 
   const routes = useRoutes([
-    { path: "/", element: <Home/> }
+    { path: "/", element: <Home/> },
   ])
 
   return (
@@ -39,6 +40,7 @@ function App() {
       </Helmet>
       <div className="app">
         <div className="content">{routes}</div>
+        <Footer/>
       </div>
     </>
   );
