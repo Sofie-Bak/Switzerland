@@ -1,0 +1,32 @@
+Gennemgang af min opgave
+Først og fremmest - hjemmesiden.
+Jeg starter med at vise hjemmesiden frem. Jeg går igennem de forskellige sektioner. Jeg viser også de animationer, jeg har lavet, og hvordan designet tilpasser sig forskellige skærmstørrelser (responsivt design).
+
+______
+Hvad lærte jeg?
+Jeg blev virkelig meget klogere på React under denne opgave - Specielt:
+
+Animationer i react: Jeg lærte at bruge react state, IntersectionObserver og useRef til at lave smooth scroll triggerede animationer, og jeg fandt ud af, hvordan animationer kan forbedre brugeroplevelsen.
+SEO i React: Jeg fik bedre forståelse for, hvordan SEO fungerer i Single Page Applications, og hvordan man kan optimere det med dynamiske meta tags.
+CSS Nesting og Animationer: Jeg blev mere sikker i at bruge nesting i CSS, hvilket gjorde mine styles mere overskuelige. Derudover lærte jeg at lave mere komplekse CSS-animationer, som gav hjemmesiden lidt ekstra liv.
+
+______
+Teknologier og biblioteker
+
+React: Jeg brugte hooks som useState, useEffect og useRef til at håndtere state og animationer.
+nesting i CSS: Dette gjorde det super hurtigt at style komponenterne og holde koden ren og overskuelig.
+React Router: Til navigation mellem siderne uden genindlæsning.
+
+_____
+Udfordringer
+
+Performance: Animationerne påvirkede performance i starten. Jeg løste noget af det ved at optimerede billederne.
+SEO-Udfordringer: Da det er en Single Page Application, var det lidt tricky at få meta tags og titler til at opdatere dynamisk. Jeg fandt dog ud af, at React Helmet kunne løse det problem.
+
+_____
+Hvad Vil Jeg Forbedre Næste Gang?
+
+Vil bruge lazy loading til at optimere, men det kan jeg se at jeg har glemt!
+Fandt ud af framer motion til react fandtes i alt for sen tid, og vil i fremtiden undersøge og bruge det.
+SEO kan helt klart også forbedres, så det vil jeg undersøge endnu mere.
+Har interesse i tailwind css og vil gerne lære og bruge det. 
